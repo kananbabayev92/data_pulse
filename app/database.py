@@ -1,9 +1,14 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+DATABASA_URL = os.getenv("DATABASE_URL")
 
 
-DATABASA_URL = "postgresql://postgres:kanan_9159@localhost:5432/myapp"
 engine = create_engine(DATABASA_URL)
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
