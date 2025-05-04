@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.py[cod]
+.env
+.env*
+!.env.example       # Keep this template file
+venv/
+.venv/
