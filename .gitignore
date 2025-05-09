@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 .env
 .env*
-!.env.example       # Keep this template file
+!.env.example  
 venv/
 .venv/
 .gitignore
